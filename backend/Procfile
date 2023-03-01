@@ -1,0 +1,2 @@
+web: gunicorn technota_api.wsgi
+worker: celery -A technota_api worker -l info
